@@ -9,6 +9,7 @@ use App\Models\admin;
 
 
 
+
 class AdminController extends Controller
 {
     // login function for admin show only login page 
@@ -41,5 +42,10 @@ class AdminController extends Controller
     // redirect after login on dashbord 
     function dashboard(){
         return view('admin.dashboard');
+    }
+    function logout(){
+        // Auth::logout();
+        // return redirect('AdminLogin');
+        return redirect('login')->with(Auth::logout());
     }
 }

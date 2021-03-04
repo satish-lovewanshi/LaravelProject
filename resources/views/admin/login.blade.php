@@ -45,6 +45,15 @@
                         <div class="clearfix"></div>
                     </form>
                 </section>
+                <section>
+                    <div>
+                        <h3 >If you want to checkout this CMS you may be login and access admin controll panel and test to change any image or text of any page  </h3>
+                        <h4 class='bg-success '>username:admin</h4>
+                        <h4 class='bg-success'>password:admin</h4>
+                        <h3>Please enter your details in Contact <a href="{{asset('contact')}}"><u>Form</u></a></h3>
+                    </div>
+                </section>
+
             </div>
         </div>
     </div>

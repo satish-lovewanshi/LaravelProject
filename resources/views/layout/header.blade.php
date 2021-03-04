@@ -5,6 +5,7 @@
                     <div class="tm-site-header-left">
                         <i class="far fa-2x fa-eye tm-site-icon"></i>
                         <h1 class="tm-site-name">Laravel CMS</h1>
+                   
 
                     </div>
                     <div class="tm-site-header-right tm-menu-container-outer">
@@ -26,7 +27,7 @@
                                                 class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link tm-nav-link" href="{{ asset('company')}}">Our Company</a>
+                                        <a class="nav-link tm-nav-link" href="{{ asset('company')}}">Company</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link tm-nav-link" href="{{asset('services')}}">Services</a>
@@ -34,6 +35,10 @@
                                     <li class="nav-item">
                                         <a class="nav-link tm-nav-link" href="{{asset('contact')}}">Contact</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link tm-nav-link" href="{{asset('AdminLogin')}}">Admin</a>
+                                    </li>
+
                                 </ul>
                                 <!-- Links -->
 

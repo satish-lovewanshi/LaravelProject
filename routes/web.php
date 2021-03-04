@@ -19,6 +19,7 @@ Route::get('/AdminLogin',[AdminController::class,'AdminLoginShow'])->name('login
 Route::post('/AdminLogin',[AdminController::class,'MakeLogin']);
 Route::group(['middleware'=>'auth:admin'],function(){
     Route::get('/dashboard',[AdminController::class,'dashboard']);
+    Route::get('logout',[AdminController::class,'logout'])->name("logout");
     // Home page edit by admin 
     Route::get('/AddHomePage',[PageController::class,'addpage']);
     Route::post('/page-create',[PageController::class,'CreatePage'])->name('page-create');
@@ -37,6 +38,7 @@ Route::group(['middleware'=>'auth:admin'],function(){
 
     // services-page
     Route::get('/services-page',[PageController::class,'ServicesEditor'])->name('services-page');
+    
 });
 //contact page 
 Route::post('/SaveContact',[ContactController::class,'SaveContact'])->name('SaveContact');
