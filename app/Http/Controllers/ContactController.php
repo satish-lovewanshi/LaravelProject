@@ -27,4 +27,14 @@ class ContactController extends Controller
         return back()->with(['message'=>'Your data is submitted.. We contact you as soon as possible !! ']);
         
     }
+    function ShowContact(){
+        $data['contact']=contact::paginate(5);
+        return view('admin.contact.contact',$data);
+    }
+    function DeleteContact(Request $req){
+        $id=$req->id;
+        $data=contact::find($id);
+        $data->delete();
+        return back()->with(['message'=>"one contact is deleted"]);
+    }
 }

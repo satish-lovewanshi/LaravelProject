@@ -40,6 +40,8 @@ Route::group(['middleware'=>'auth:admin'],function(){
 });
 //contact page 
 Route::post('/SaveContact',[ContactController::class,'SaveContact'])->name('SaveContact');
+Route::get('/ShowContact',[ContactController::class,'ShowContact'])->name('ShowContact');
+Route::get('del/{id?}',[ContactController::class,'DeleteContact'])->name('delete');
 
 
 

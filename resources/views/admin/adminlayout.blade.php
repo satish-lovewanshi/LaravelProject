@@ -56,7 +56,7 @@
                                 </li>
                                 <li><a href="{{route('services-page')}}"><i class="fa fa-home"></i> Services </a>
                                 </li>
-                                <li><a><i class="fa fa-home"></i> Contact </a>
+                                <li><a href='{{route("ShowContact")}}'><i class="fa fa-home"></i> Contact </a>
                                 </li>
                                 <li><a href='{{route("showpost")}}'><i class="fa fa-home"></i>Show Post </a>
                                 </li>
