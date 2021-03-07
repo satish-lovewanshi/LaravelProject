@@ -28,7 +28,7 @@
                     <td>{{$post->section_title}}</td>
                     <td>{{$post->title}}</td>
                     <td>{{$post->description}}</td>
-                    <td><img src="uploads/{{$post->image}}" style='width:50px;height:50px;' alt="">{{$post->image}}</td>
+                    <td><img src="{{asset('storage/postimage/'.$post->image)}}" style='width:50px;height:50px;' alt="">{{$post->image}}</td>
                     <td>
                         <a href="post-edit/{{$post->id}}" class='btn btn-primary tbn-xs'><i class='fa fa-pencil'></i></a>
                         <a href="delete/{{$post->id}}" class='btn btn-danger btn-xs'><i class='fa fa-trash'></i></a>

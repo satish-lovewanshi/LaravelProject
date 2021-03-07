@@ -5,7 +5,7 @@
         @if($value->section_title=='banner_image')
         <div class="row">
             <div class="col-12 overflow-hidden">
-                    <img  class="tm-main-bg" src="uploads/{{$value->data}}" alt="">
+                    <img  class="tm-main-bg" src="{{asset('storage/bannerimage/'.$value->data)}}" alt="">
             </div>
         </div>  
         @endif
@@ -63,7 +63,7 @@
                 @if($value->section_title=='third_section')
                     <div class="col-md-6">
                         <div class="tm-about-1">
-                            <img src="uploads/{{$value->image}}" alt="Image" class="img-fluid mb-5">
+                            <img src="{{asset('storage/postimage/'.$value->image)}}" alt="Image" class="img-fluid mb-5">
                             <p class="tm-article-text">{{$value->title}}</p>
                             <p>{{$value->description}}</p>
                         </div>    
@@ -96,7 +96,7 @@
             @foreach($post as $value)
                 @if($value->section_title=='forth_section')
                     <figure class="effect-zoe">
-                        <img src="uploads/{{$value->image}}" alt="Featured Item">
+                        <img src="{{asset('storage/postimage/'.$value->image)}}" alt="Featured Item">
                         <figcaption>
                             <h2>{{$value->title}}</h2>
                             <p class="icon-links">

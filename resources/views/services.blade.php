@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12 overflow-hidden">
                 <div class="">
-                    <img  class="tm-main-bg" src="uploads/{{$value->data}}" alt="">
+                    <img  class="tm-main-bg" src="{{asset('storage/bannerimage/'.$value->data)}}" alt="">
                 </div>
             </div>
         </div>  
@@ -36,7 +36,7 @@
                 @if($value->section_title=="second_section")
                     <div class="col-md-3 col-sm-6">
                         <figure class="tm-services-img">
-                            <img src="uploads/{{$value->image}}" alt="Image" class="img-fluid">
+                            <img src="{{asset('storage/postimage/'.$value->image)}}" alt="Image" class="img-fluid">
                             <figcaption class="tm-service-description">{{$value->title}}</figcaption>
                         </figure>
                     </div>
