@@ -10,13 +10,13 @@ class BaseController extends Controller
 {
     //
     function home(){
-        $data=page::where('page_title','home')->get();
+        $data=page::where('page_title','Home')->get();
         $post=post::where('page_title','home')->get();
         return view('home',['data'=>$data,'post'=>$post]);
     }
     function company(){
-        $data=page::where('page_title','company')->get();
-        $post=post::where('page_title','company')->get();
+        $data=page::where('page_title','Company')->get();
+        $post=post::where('page_title','Company')->get();
         return view('company',['data'=>$data,'post'=>$post]);
     }
     function services(){

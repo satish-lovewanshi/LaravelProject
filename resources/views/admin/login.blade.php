@@ -47,6 +47,7 @@
                 </section>
                 <section>
                     <div>
+                        <p style="coler:red;">If you are open admin pannel in desktop you can assecc all controll of admin</p>
                         <h3 >If you want to checkout this CMS you may be login and access admin controll panel and test to change any image or text of any page  </h3>
                         <h4 class='bg-success '>username:admin</h4>
                         <h4 class='bg-success'>password:admin</h4>

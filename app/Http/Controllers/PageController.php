@@ -11,7 +11,7 @@ class PageController extends Controller
 {
     //
     function AddPage(Request $req){
-        $page=DB::table("pages")->where('page_title','home')->get();
+        $page=DB::table("pages")->where('page_title','Home')->get();
         $numrow=count($page);
       
         return view('admin.home.addpage',['data'=>$page,'total_row'=>$numrow]);

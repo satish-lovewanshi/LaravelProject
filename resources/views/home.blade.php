@@ -3,17 +3,15 @@
 @if($data)
     @foreach($data as $value)
         @if($value->section_title=='banner_image')
-        <div class="row">
-            <div class="col-12">
-                <div class="">
+            <div class="row">
+                <div class="col-12 overflow-hidden">
                     <img  class="tm-main-bg" src="uploads/{{$value->data}}" alt="">
                 </div>
-            </div>
-        </div>  
+            </div>  
         @endif
     @endforeach
 @endif
-        <!-- Main -->
+<!-- Main -->
 <main>
     <!-- Welcome section -->
     <section class="tm-welcome">

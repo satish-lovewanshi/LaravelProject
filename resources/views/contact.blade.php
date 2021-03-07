@@ -1,7 +1,7 @@
 @extends('layout.layout')
 @section('content')
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 overflow-hidden">
                 <div class="tm-main-bg tm-contact-bg"></div>        
             </div>
         </div>

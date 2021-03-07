@@ -3,7 +3,7 @@
     @foreach($data as $value)
         @if($value->section_title=='banner_image')
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 overflow-hidden">
                 <div class="">
                     <img  class="tm-main-bg" src="uploads/{{$value->data}}" alt="">
                 </div>
