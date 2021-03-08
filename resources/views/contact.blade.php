@@ -48,14 +48,7 @@
                     <div class="col-lg-6 mb-5 tm-contact-box">
                       <div class="tm-double-border-1 tm-border-gray">
                         <div class="tm-double-border-2 tm-border-gray tm-box-pad">
-                            <p class="mb-4">
-                              <a rel="nofollow" target="_parent" href="https://templatemo.com/tm-542-new-vision">New Vision</a> HTML Template is free to download instantly from TemplateMo website. In dapibus dui vitae urna fringilla volupat.
-                            </p>
-                            <p class="mb-3">
-                              120-240 Rio de Janeiro - State of Rio de Janeiro, Brazil
-                            </p>
-                            <p class="mb-1">Tel: <a href="tel:0900100910" class="tm-link">090-010-0910</a></p>
-                            <p>Email: <a href="mailto:info@company.com" class="tm-link">info@company.com</a></p>
+                            <P>SONE TEXT</P>
                         </div>                    
                       </div>                  
                     </div>
@@ -69,19 +62,20 @@
                 <div class="row pb-5">
                   <div class="mapouter">
                       <div class="gmap_canvas">
-
-                          <iframe width="100%" height="440" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    
+                          <!-- <iframe  src="https://maps.google.com/maps?q=Av.+Lúcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe> -->
+                            <iframe width="100%" height="440" id="gmap_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.7590202336823!2d75.7863883142855!3d23.17899371628184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3963746b93b14edb%3A0x79e43a18853c9ea8!2sTower%20Chowk%2C%20Madhav%20Nagar%2C%20Ujjain%2C%20Madhya%20Pradesh%20456010!5e0!3m2!1sen!2sin!4v1615191534639!5m2!1sen!2sin"  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                           
                       </div>
                   </div>
                 </div>
-                <div class="row pt-5 pb-5 mb-5">
+                <div class="row pt-5 pb-5 mb-5 bg-dark ">
                 @if($post)
                   @foreach($post as $value)
                     @if($value->section_title=='forth_section')
                         <div class="col-md-6 tm-contact-l">
                             <h3 class="tm-article-title tm-color-primary">{{$value->title}}</h3>
-                            <p class="mb-4">{{$value->description}}</p>
+                            <p class="mb-4 text-justify text-white">{!! $value->description !!}</p>
                            
                         </div>
                     @endif

@@ -47,7 +47,7 @@
                     @if($value->section_title=='banner_image')
                     {!! Form::hidden('old_image',$value->data) !!}
                         <p>{{$value->data}}</p>
-                        <img src="{{asset('storage/bannerimage/'.$value->data)}}" alt="Banner Image " style='height:200px;width:200px;'>
+                        <img src="{{asset('uploads/'.$value->data)}}" alt="Banner Image " style='height:200px;width:200px;'>
                     @endif
                 @endforeach
             </div>

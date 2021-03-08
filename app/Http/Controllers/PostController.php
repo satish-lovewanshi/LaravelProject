@@ -35,9 +35,9 @@ class PostController extends Controller
         }else{
             $filename="";
             if($req->image){
-                // $filename=$this->fileUpload($req,'image','');
-                $filename=$req->file('image')->getClientOriginalName();
-                $req->file('image')->storeAs('public/postimage',$filename); //store image in storage/app/public/banner_image
+                $filename=$this->fileUpload($req,'image','');
+                // $filename=$req->file('image')->getClientOriginalName();
+                // $req->file('image')->storeAs('public/postimage',$filename); //store image in storage/app/public/banner_image
             }else{
                 if($req->old_image){
                     $filename=$req->old_image;
@@ -67,7 +67,7 @@ class PostController extends Controller
     }
     // post edit
     function showpost(){
-        $data['posts']=post::paginate(10);
+        $data['posts']=post::paginate(20);
         return view('admin.post.showpost',$data);
     }
     // Delete post 

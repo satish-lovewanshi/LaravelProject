@@ -72,9 +72,9 @@ class PageController extends Controller
                 for($i=0;$i<count($field);$i++){
                     $image_name=$field[$i];
                     if($req->$image_name){
-                        // $filename=$this->fileUpload($req,$image_name,'');//'' image path diya 
-                        $filename=$req->file('banner_image')->getClientOriginalName();
-                        $req->file('banner_image')->storeAs('public/bannerimage',$filename); //store image in storage/app/public/banner_image
+                        $filename=$this->fileUpload($req,$image_name,'');//'' image path diya 
+                        // $filename=$req->file('banner_image')->getClientOriginalName();
+                        // $req->file('banner_image')->storeAs('public/bannerimage',$filename); //store image in storage/app/public/banner_image
                         $field_name=page::where(['section_title'=>$image_name,
                                                 'page_title'=>$PageValues['title']])->get();
                     if(count($field_name)>0){

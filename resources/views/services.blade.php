@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-12 overflow-hidden">
                 <div class="">
-                    <img  class="tm-main-bg" src="{{asset('storage/bannerimage/'.$value->data)}}" alt="">
+                    <img  class="tm-main-bg" src="{{asset('uploads/'.$value->data)}}" alt="">
                 </div>
             </div>
         </div>  
@@ -36,7 +36,7 @@
                 @if($value->section_title=="second_section")
                     <div class="col-md-3 col-sm-6">
                         <figure class="tm-services-img">
-                            <img src="{{asset('storage/postimage/'.$value->image)}}" alt="Image" class="img-fluid">
+                            <img src="{{asset('uploads/'.$value->image)}}" alt="Image" class="img-fluid">
                             <figcaption class="tm-service-description">{{$value->title}}</figcaption>
                         </figure>
                     </div>
@@ -65,9 +65,9 @@
                     <div class="col-md-6">
                         <div class="tm-approach-box">
                             <div class="tm-media tm-media-2 tm-media-v-center tm-solid-border">
-                                {!! $value->title !!}
+                                {!! $value->title !!} <!--icons-->
                                 <div>
-                                    <p>{{$value->description}}</p>
+                                    <p class='text-justify'>{{$value->description}}</p>
                                 </div>
                             </div>
                         </div>
@@ -103,8 +103,8 @@
                 <img src="img/partner-05.png" alt="Partner Image" class="img-fluid">
             </div>
 
-            <p class="tm-partner-text">Etiam et odio ut nibh suscipit eleifend. Sed facilisis, enim nec auctor vehicula, dolor odio venenatis turpis, eu vehicula ipsum ligula a nisi. Nam vel nulla sed enim imperdiet fermentum. Mauris venenatis imperdiet ex, quis rutrum orci vestibulum
-                tristique. Ut gravida est ac risus dignissim sollicitudin. #999</p>
+            <p class=" text-justify pb-5">A website without visitors is like a ship lost in the horizon.” “If you think math is hard, try web design.” “A user interface is like a joke. If you have to explain it, it's not that good
+            The public is more familiar with bad design than good design. It is, in effect, conditioned to prefer bad design, because that is what it lives with. The new becomes threatening, the old reassuring.</p>
 
         </div>
     </section>

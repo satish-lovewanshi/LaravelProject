@@ -5,7 +5,7 @@
         @if($value->section_title=='banner_image')
             <div class="row">
                 <div class="col-12 overflow-hidden">
-                    <img  class="tm-main-bg" src="{{asset('storage/bannerimage/'.$value->data)}}" alt="">
+                    <img  class="tm-main-bg" src="{{asset('uploads/'.$value->data)}}" alt="">
                 </div>
             </div>  
         @endif
@@ -34,7 +34,7 @@
             @foreach($post as $value)
                 @if($value->section_title=='second_section')
                     <article class="col-lg-6 tm-media">
-                        <img src="{{asset('storage/postimage/'.$value->image)}}" style='width:300px;height:200px;' alt="Second section image " class="img-fluid tm-media-img" />
+                        <img src="{{asset('uploads/'.$value->image)}}" style='width:300px;height:200px;' alt="Second section image " class="img-fluid tm-media-img" />
                         <div class="tm-media-body">
                             <a href="#" class="tm-article-link">
                                 <h3 class="tm-article-title text-uppercase">{{$value->title}}
@@ -56,7 +56,8 @@
                     @if($value->section_title=='third_section')
                         <div class="col-lg-4 tm-dotted-box-container">
                             <article class="tm-dotted-box">
-                                <i class="fas fa-3x fa-binoculars tm-article-icon"></i>
+                                <!-- <i class="fas fa-3x fa-binoculars tm-article-icon"></i> -->
+                                <img src="{{asset('uploads/'.$value->image)}}" style='width:100px;height:100px' alt="box image">
                                 <h3 class="tm-article-title">{{$value->title}}</h3>
                                 <p class="tm-article-text">{{$value->description}}</p>
                                 <a class="tm-btn tm-btn-rounded tm-article-link " href="#">More Details</a>
@@ -90,7 +91,7 @@
                 @foreach($post as $value)
                     @if($value->section_title=="forth_section")
                         <figure class="effect-honey">
-                            <img src="{{asset('storage/postimage/'.$value->image)}}" alt="Featured Item">
+                            <img src="{{asset('uploads/'.$value->image)}}" alt="Featured Item">
                             <figcaption>
                                 <h4><i><span>{{$value->title}}</span></i></h4>
                             </figcaption>

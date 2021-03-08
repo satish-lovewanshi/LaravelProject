@@ -5,7 +5,7 @@
         @if($value->section_title=='banner_image')
         <div class="row">
             <div class="col-12 overflow-hidden">
-                    <img  class="tm-main-bg" src="{{asset('storage/bannerimage/'.$value->data)}}" alt="">
+                    <img  class="tm-main-bg" src="{{asset('uploads/'.$value->data)}}" alt="">
             </div>
         </div>  
         @endif
@@ -35,9 +35,11 @@
             @if($value->section_title=='second_section')
                 <div class="tm-about">
                     <div class="col-12 tm-media tm-media-v-center">
-                        {!! $value->title !!}
+                        <!-- {!! $value->title !!} -->
+                        <img src="{{asset('uploads/'.$value->image)}}" style='width:200px;height:200px' alt="CMS image">
+
                         <div>
-                            <p>{{$value->description}}</p>
+                            <p class='text-justify'>{{$value->description}}</p>
                         </div>
                     </div>
                 </div>
@@ -63,9 +65,9 @@
                 @if($value->section_title=='third_section')
                     <div class="col-md-6">
                         <div class="tm-about-1">
-                            <img src="{{asset('storage/postimage/'.$value->image)}}" alt="Image" class="img-fluid mb-5">
-                            <p class="tm-article-text">{{$value->title}}</p>
-                            <p>{{$value->description}}</p>
+                            <img src="{{asset('uploads/'.$value->image)}}" alt="Image" class="img-fluid mb-5">
+                            <p class="tm-article-text text-justify">{{$value->title}}</p>
+                            <p class='text-justify'>{{$value->description}}</p>
                         </div>    
                     </div> 
                     @endif
@@ -96,7 +98,7 @@
             @foreach($post as $value)
                 @if($value->section_title=='forth_section')
                     <figure class="effect-zoe">
-                        <img src="{{asset('storage/postimage/'.$value->image)}}" alt="Featured Item">
+                        <img src="{{asset('uploads/'.$value->image)}}" alt="Featured Item">
                         <figcaption>
                             <h2>{{$value->title}}</h2>
                             <p class="icon-links">

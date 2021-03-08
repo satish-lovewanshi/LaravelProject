@@ -36,7 +36,7 @@ class AdminController extends Controller
         }
         else
         {
-            return back()->withErrors(['message'=>"Username and password is not valid please enter valid credential"]);
+            return back()->with(['message'=>"Username and password is not valid please enter valid credential"]);
         }
     }
     // redirect after login on dashbord 
