@@ -48,7 +48,10 @@
                     <div class="col-lg-6 mb-5 tm-contact-box">
                       <div class="tm-double-border-1 tm-border-gray">
                         <div class="tm-double-border-2 tm-border-gray tm-box-pad">
-                            <P>SONE TEXT</P>
+                            <P >Hello,</P>
+                            <p class='text-justify'>I am Satish Lovewanshi.I complete this project in 29 days and i am working on Php/Laravel since 2-dec-2020.Yes,i am not perfect but i'm trying to do better.</p>
+                            <p class='text-justify'>Currently I am looking for an internship or job opportunity. I have good knowledge about <b>php laravel and python Django</b>.</p>
+                            <p>My Linkedin Link  <a href="https://www.linkedin.com/in/satish-lovewanshi">Click</a></p>
                         </div>                    
                       </div>                  
                     </div>
